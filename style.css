@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: font-family: 'Inter', sans-serif;
+
+  --clr-good: #1EB589;
+  --clr-bad: #dc414c;
+
+  --clr-facebook: #178ff5;
+  --clr-twitter: #1da1f2;
+  --clr-instagram: linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%);
+  --clr-youtube: #c4032b;
+
+  --clr-font-primary: #1d1f29;
+  --clr-font-secondary: #63687D;
+
+  --clr-bg-card: #F1F3FA;
+
+}
