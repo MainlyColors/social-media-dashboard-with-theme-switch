@@ -14,6 +14,9 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- javascript -->
+    <script src="./script.js" defer></script>
+
     <title>Frontend Mentor | Social Media Dashboard</title>
 
     <!-- <style>
@@ -28,12 +31,13 @@
   </head>
   <body>
     <main>
+      <div class="bg-top-banner"></div>
       <header>
         <div>
           <h1>Social Media Dashboard</h1>
           <p>Total Followers: 23,004</p>
         </div>
-        <fieldset>
+        <fieldset class="theme-switcher-container">
           <label for="theme-switcher">Dark Mode</label>
           <input type="checkbox" name="theme-switcher" />
         </fieldset>
@@ -41,61 +45,61 @@
       <!-- total stats section -->
       <section class="social-summary-container">
         <!-- card 1 -->
-        <div class="social-card-container">
+        <div class="social-card-container facebook">
           <div class="username">
             <img src="./images/icon-facebook.svg" alt="facebook logo" />
             <span>@nathanf</span>
           </div>
-          <div class="social-card__followers">
+          <div class="social-card__followers-container">
             <span class="social-card__number">1987</span>
             <span class="social-card__number-description">followers</span>
           </div>
-          <div class="social-card__change">
+          <div class="social-card__change-container">
             <img src="./images/icon-up.svg" alt="up arrow" />
             <span>12 Today</span>
           </div>
         </div>
         <!-- card 2 -->
-        <div class="social-card-container">
+        <div class="social-card-container twitter">
           <div class="username">
             <img src="./images/icon-twitter.svg" alt="twitter logo" />
             <span>@nathanf</span>
           </div>
-          <div class="social-card__followers">
+          <div class="social-card__followers-container">
             <span class="social-card__number">1044</span>
             <span class="social-card__number-description">followers</span>
           </div>
-          <div class="social-card__change">
+          <div class="social-card__change-container">
             <img src="./images/icon-up.svg" alt="up arrow" />
             <span>99 Today</span>
           </div>
         </div>
         <!-- card 3  -->
-        <div class="social-card-container">
+        <div class="social-card-container instagram">
           <div class="username">
             <img src="./images/icon-instagram.svg" alt="instagram logo" />
             <span>@realnathanf</span>
           </div>
-          <div class="social-card__followers">
+          <div class="social-card__followers-container">
             <span class="social-card__number">11k</span>
             <span class="social-card__number-description">followers</span>
           </div>
-          <div class="social-card__change">
+          <div class="social-card__change-container">
             <img src="./images/icon-up.svg" alt="up arrow" />
             <span>1099 Today</span>
           </div>
         </div>
         <!-- card 4 -->
-        <div class="social-card-container">
+        <div class="social-card-container youtube">
           <div class="username">
             <img src="./images/icon-youtube.svg" alt="youtube logo" />
             <span>@Nathan F.</span>
           </div>
-          <div class="social-card__followers">
+          <div class="social-card__followers-container">
             <span class="social-card__number">8239</span>
             <span class="social-card__number-description">subscribers</span>
           </div>
-          <div class="social-card__change">
+          <div class="social-card__change-container">
             <img src="./images/icon-down.svg" alt="down arrow" />
             <span>144 Today</span>
           </div>
@@ -185,10 +189,6 @@
         </div>
       </section>
     </main>
-
-    @nathanf 1044 Followers 99 Today @realnathanf 11k Followers 1099 Today Nathan F. 8239 Subscribers 144 Today Overview
-    - Today Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375% Retweets 117 303% Likes 507 553% Likes
-    107 19% Total Views 1407 12%
 
     <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
