@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--ff-primary);
+  transition: color 0.2s, background-color 0.2s;
 }
 
 :root {
@@ -28,6 +29,7 @@
   --clr-bg-card-hover: #e1e4f0;
 
   --clr-bg-switch: #aeb3cb;
+  --clr-bg-switch-hover: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
 
   /* responsive variables */
   --gap: 1.5rem;
@@ -37,7 +39,6 @@
 
 body {
   background-color: var(--clr-bg);
-  /* transition: color 0.2s, background-color 0.2s; */
 }
 
 main {
@@ -116,6 +117,7 @@ p {
 }
 
 .theme-switcher-container input {
+  transition: unset;
   position: relative;
   appearance: none;
   background-color: var(--clr-bg-switch);
@@ -123,6 +125,17 @@ p {
   height: 1.5rem;
   border-radius: 0.75rem;
   cursor: pointer;
+}
+
+.theme-switcher-container input:hover,
+.theme-switcher-container input:checked {
+  background-color: unset;
+  background-image: var(--clr-bg-switch-hover);
+}
+
+.theme-switcher-container input:checked:hover {
+  background-color: var(--clr-bg-switch);
+  background-image: unset;
 }
 
 .theme-switcher-container input::before {
@@ -137,10 +150,6 @@ p {
   right: 0.1875rem;
   transition: transform 0.2s;
 }
-
-/* .theme-switcher-container input:hover {
-  background-color: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
-} */
 
 .theme-switcher-container input:checked::before {
   transform: translateX(-24px);
