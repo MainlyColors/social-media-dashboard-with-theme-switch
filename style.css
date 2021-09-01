@@ -41,6 +41,7 @@ body {
 }
 
 main {
+  max-width: 69.375rem;
   margin: 2.25rem 1.5rem 0 1.5rem;
 }
 
@@ -68,6 +69,13 @@ h1 {
   font-weight: 700;
   font-size: clamp(1.5rem, 6.4vw, 1.75rem);
   line-height: clamp(1.8125rem, 7.7vw, 2.125rem);
+}
+
+h2 {
+  color: var(--clr-font-secondary);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
 }
 
 p {
@@ -151,7 +159,6 @@ p {
   flex-direction: column;
   align-items: center;
   background-color: var(--clr-bg-card);
-  /* width: clamp(15.9375rem, 86.9vw, 20.375rem); */
   height: 13.5rem;
   border-radius: 0.3125rem;
 }
@@ -181,6 +188,7 @@ p {
   background-color: var(--clr-youtube);
 }
 
+/* social summary cards */
 .username {
   display: flex;
   align-items: center;
@@ -225,23 +233,88 @@ p {
   align-items: center;
   gap: 0.25rem;
   margin-top: 1.5625rem;
-  /* color: var(--clr-good); */
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 0.9375rem;
 }
 
-.social-card__change-container img[src*='icon-up'] + span {
+* img[src*='icon-up'] + span {
   color: var(--clr-good);
 }
 
-.social-card__change-container img[src*='icon-down'] + span {
+* img[src*='icon-down'] + span {
   color: var(--clr-bad);
+}
+
+/* daily overview */
+.overview-title {
+  margin-top: 2.875rem;
+}
+
+.overview-container {
+  --gap: 1rem;
+  max-width: 69.375rem;
+  margin: 1.6875rem 0 2.8125rem 0;
+  display: grid;
+  justify-items: center;
+  gap: var(--gap);
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(clamp(14.5rem, (25% - (var(--gap) / 2)), var(--max-item-width)), 1fr)
+  );
+}
+
+.daily-card-container {
+  background-color: var(--clr-bg-card);
+  padding: 1.625rem 1.9375rem 1.5rem 1.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 0.3125rem;
+}
+
+.daily-card__description {
+  color: var(--clr-font-secondary);
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+}
+
+.daily-card-container > img {
+  justify-self: end;
+}
+
+.daily-card__total-number {
+  align-self: end;
+  color: var(--clr-font-primary);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4375rem;
+}
+
+.daily-card__change-container {
+  justify-self: end;
+  align-self: end;
+  display: flex;
+  align-items: center;
+  gap: 0.1875rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.9375rem;
 }
 
 @media only screen and (min-width: 72.375em) {
   :root {
     /* responsive variables */
     --max-item-width: 15.9375rem;
+  }
+
+  main {
+    margin: 2.25rem auto 0 auto;
+  }
+
+  .overview-container {
+    margin: 1.6875rem auto 2.8125rem auto;
   }
 }
