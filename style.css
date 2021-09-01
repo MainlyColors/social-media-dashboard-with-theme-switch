@@ -56,6 +56,11 @@ main {
   z-index: -99;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+}
+
 header div {
   margin-bottom: 2.5625rem;
   display: flex;
@@ -302,6 +307,28 @@ p {
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 0.9375rem;
+}
+
+@media only screen and (min-width: 48em) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header div {
+    margin-bottom: unset;
+  }
+
+  .theme-switcher-container::before {
+    display: none;
+  }
+
+  .theme-switcher-container {
+    justify-content: unset;
+    align-items: center;
+    width: unset;
+    gap: 0.8125rem;
+  }
 }
 
 @media only screen and (min-width: 72.375em) {
