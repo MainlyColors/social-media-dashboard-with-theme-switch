@@ -175,6 +175,7 @@ p {
   background-color: var(--clr-bg-card);
   height: 13.5rem;
   border-radius: 0.3125rem;
+  cursor: pointer;
 }
 
 /* little strip at top of boxes */
@@ -184,6 +185,10 @@ p {
   height: 0.25rem;
   width: 100%;
   border-radius: 0.3125rem 0.3125rem 0 0;
+}
+
+.social-card-container:hover {
+  background-color: var(--clr-bg-card-hover);
 }
 
 .facebook::before {
@@ -286,6 +291,11 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.daily-card-container:hover {
+  background-color: var(--clr-bg-card-hover);
 }
 
 .daily-card__description {
