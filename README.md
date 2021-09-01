@@ -26,16 +26,21 @@ Users should be able to:
 - Toggle color theme to their preference
 
 ### Screenshot
+- The design is fully responsive but below were the main design points
 
-![](./screenshot.jpg)
+Mobile Layout - 375px screen width - dark theme
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![](./screenshots/mobile-layout.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+Tablet Layout - 768px screen width - dark theme
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshots/tablet-layout.png)
+
+
+Desktop Layout - 1440px screen width - light theme
+
+![](./screenshots/desktop-layout.png)
 
 ### Links
 
